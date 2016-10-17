@@ -1,1 +1,22 @@
-hi
+<body onkeypress="{
+  document.getElementById('myOut1').innerHTML = 
+  String.fromCharCode(event.keyCode) + ' = ' + event.keyCode
+
+}">
+
+<h1 align=center> Events by Fred</h1>
+
+This <b onClick="{
+  alert('hi')
+}"> is Bold </b> not this.<br><br><br><br>
+
+<input type=text value=fred id="myText1" onselect="{ 
+  document.getElementById('myOut1').innerHTML = 
+  document.all.myText1.value
+}">
+
+<div id="myOut1">  Output goes here</div>
+
+</body>
+
+
